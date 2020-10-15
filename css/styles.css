@@ -1,0 +1,509 @@
+/* header */
+@font-face {
+    font-family: "OpenSans-Regular";
+    src:
+        url('../fonts/OpenSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: 
+        url('../fonts/OpenSans-SemiBold.ttf');
+    font-weight: 600;
+    font-style: bold;
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: 
+        url('../fonts/OpenSans-Bold.ttf');
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: 
+        url('../fonts/OpenSans-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: bold;
+}
+@font-face {
+    font-family: "OpenSans-Italic";
+    src: 
+        url('../fonts/OpenSans-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+body {
+	background: #F6F2F2;
+	margin-top: 29px;
+}
+h1 {
+	text-transform: uppercase;
+}
+body p: {
+	font-family: "OpenSans-Regular";
+	font-size: 16px;
+}
+.header {
+	max-width: 1249px;
+	margin: 0 auto;
+	background: black;
+	min-height: 89px;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: white;
+	text-transform: uppercase;
+}
+.menu ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	min-height: 89px;
+	list-style-type: none;
+	padding: 0; /* убрать принятый по умолчанию отступ списка */
+}
+.menu a {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;	/* горизонтальное выравнивание */
+	line-height:89px;	/* вертикальное выравнивание текста по центру */
+	font-family: "OpenSans-Bold";
+	font-size: 14px
+}
+.menu a:visited {
+	color: white;
+}
+.menu a:hover {
+	background: #FF3F40;
+}
+
+/* main */
+
+main h1 {
+	text-transform: uppercase;
+}
+.intro {
+	background: #f6F2F2;
+	max-width: 1249px;
+	margin: 0 auto;
+	margin-top: 103px;
+	margin-bottom: : 111px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex: 1 1 250px;
+
+}
+.intro-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 50%;
+	min-width: 250px;
+}
+.intro-text h1 {
+	font-family: "OpenSans-ExtraBold";
+	font-size: 60px
+}
+.intro-text p {
+	font-family: "OpenSans-Regular";
+	font-size: 16px
+	margin-bottom: 60px;
+}
+
+.intro-video {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	max-width: 50%;
+	min-width: 250px;		/* не срабатывает */
+}
+.intro-button {
+	background: #FF2D2D;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	min-width: 12ch;	/* не срабатывает */
+	max-width: 227px;
+	line-height:55px;
+	font-family: "OpenSans-Bold";
+	font-size: 18px
+}
+.intro-button a {
+	text-decoration: none;	/* не срабатывает */
+	min-width: 12ch;	/* не срабатывает */
+}
+
+.intro-button a:visited {
+	color: white;
+}
+.serv {
+	background: #F2F2F; /* не срабатывает */
+	max-width: 1249px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+}
+.serv-left {
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: flex-start;
+	width: 50%;
+	min-width: 300px;
+}
+.serv-button {
+	background: rgba(0,0,0,0.0001);
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FF0000; 
+	font-size: 18px;
+	color: #FF2D2D;
+	text-align: center;
+	min-width: 12ch;	/* не срабатывает */
+	max-width: 227px;
+	line-height:55px;
+	font-family: "OpenSans-Bold";
+	font-size: 18px
+}
+.serv-button a {
+	text-decoration: none;
+}
+.serv-button a:visited {
+	color: #FF2D2D;
+}
+.serv-right {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: flex-start;
+	width: 50%;
+}
+.serv-right-block1 {
+	display: block;
+	width: 50%;
+	min-width: 150px;
+}
+.serv-right-block2 {
+	display: block;
+	width: 50%;
+	min-width: 150px;
+}
+.serv-right-block3 {
+	display: block;
+	width: 50%;
+	min-width: 150px;
+}
+.serv-right-block4 {  
+	display: block;
+	width: 50%;
+	min-width: 150px;
+}
+.serv-right-head {
+	font-family: "OpenSans-SemiBold";
+	font-size: 24px;
+}
+.products {
+max-width: 1249px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+
+font-family: OpenSans-Regular;
+font-size: 16px;
+}
+.products-menu ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style-type: none;
+
+}
+.products-menu a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-left: 13px;
+	padding-right: 13px;
+	text-align: center;	/* горизонтальное выравнивание */
+	line-height:20px;	/* вертикальное выравнивание текста по центру */
+	font-family: "OpenSans-SemiBold";
+	font-size: 22px;
+}
+.products-menu a:visited {
+	color: black;
+}
+.products-menu a:hover {
+	color: #FF3F40;
+}
+.templates {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.templates a img {
+	margin: 12px 12px; /* поля между квадратами - не работает */
+}
+.team-intro {
+	max-width: 1249px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+}
+.team {
+	max-width: 1249px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.team-left {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	max-width:30%;
+}
+.team-right {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	width:70%;
+}
+.team-selected-person {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.social {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start; /* не работает */
+	align-items: flex-start;
+}
+.social ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start; /* не работает */
+	list-style-type: none;
+}
+.social a {
+	text-decoration: none;
+	padding-right: 20px;
+	font-family: "OpenSans-Italic";
+	font-size: 18px;
+}
+.social a:visited {
+	color: black;
+}
+.social a:hover {
+	color: #FF3F40;
+}
+.persones {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;	
+}
+.one-person {
+	display: flex;
+	flex-direction: columns;
+	justify-content: flex-start;
+	position: relative;
+	align-items: flex-start;
+}
+.one-person a{
+	margin: 0px 2px;
+}
+.persone-name p {
+	width: 200px;
+	margin-top: 0px;
+	font-family: OpenSans-SemiBold;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	max-width: 200px;
+	margin: 0px 0px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	line-height:37px;
+	position: absolute;
+	top: 180px; left: 2px;
+}
+.black {
+	background: #2D2D2D;
+;
+	max-width: 2400px;
+	text-align: center;	
+}
+.subscribe-text {
+	font-family: OpenSans-Bold;
+	font-size: 42px;
+	text-align: center;
+	color: white;
+}
+.subscribe {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+.email-input input {
+	font-family:
+	OpenSans-Regular;
+	font-size: 16px;
+	background: #FFFFFF;
+	line-height:82px;  /* не срабатывает */
+	width: 524px;
+	text-align: left;
+	padding-left: 30px;
+	margin-right: 19px;
+	margin-bottom: 100px;
+}
+.subscribe-button button {
+	background: #FF2D2D;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	width: 217px;
+	line-height: 82px;  /* не срабатывает */
+	font-family: "OpenSans-Bold";
+	font-size: 18px
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+.get-in-touch {
+	max-width: 1249px;
+	margin: 0 auto;
+}
+.contact {
+	max-width: 1249px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.contact-left {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+	align-items: stretch;
+
+}
+.name-mail {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;  /* все-равно делает отступ слева  */
+	align-items: flex-start;
+	width: 100%;
+	margin: 0px auto 64px auto;
+	  
+}
+.name-mail input {
+	height: 71px;
+	width: 39.5%;
+	background: rgba(0,0,0,0.1);
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+	border: none;
+	margin: 0px 10% 0px 0px;
+}
+.message input {
+	width: 90%;
+	margin: 0px 10% 64px 0px;
+	height: 252px;
+	background: rgba(0,0,0,0.1);
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+	font-color: #000000;
+	border: none;
+}
+.message-button button {
+	background: #FF2D2D;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	line-height: 75px;  /* не срабатывает */
+	font-family: "OpenSans-Bold";
+	font-size: 18px
+	text-transform: uppercase;
+	width: 90%;
+	margin: 0px 10% 0px 0px;
+	border: none;
+}
+.contact-right {
+	background: #2D2D2D;
+	color: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30%;
+	align-items: stretch;
+	padding: 100px 0px;
+}
+.contact-right p {
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin: 8px 10%;
+}
+.footer {
+	background:#313030;
+	
+}
+.footer-block {
+	max-width: 1249px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 113px;
+
+}
+.footer-block p {
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin: 8px 10%;
+}
+.footer-social {
+	margin: auto 10%;
+}
